@@ -7,13 +7,20 @@
 //
 
 import XCTest
+import Mockingjay
 @testable import XKCD
 
 class XKCDTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+        let body = [
+            "title": "Café Allongé",
+            "alt": "Drink coffee",
+            "img": "https://imgs.xkcd.com/comics/latitude.png",
+        ]
+        stub(http(.get, uri: "https://xkcd.com/info.0.json"), json(body))
     }
     
     override func tearDown() {
@@ -21,10 +28,22 @@ class XKCDTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+    func testLoadXKCD() {
+        let expectation = self.expectation(description: "fetch XKCD comic")
+
+        let _ = XKCD().loadDefaultComic().then { (comic: XKCDComic) -> Void in
+            XCTAssertFalse(comic.title.isEmpty)
+            XCTAssertFalse(comic.alt.isEmpty)
+            XCTAssertFalse(comic.imageUrl.isFileURL)
+        }.catch { (error: Error) in
+            debugPrint(error)
+            XCTFail()
+        }.always {
+            expectation.fulfill()
+        }
+
+        self.waitForExpectations(timeout: 5.0, handler: nil)
+   }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
@@ -32,5 +51,4 @@ class XKCDTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-    
 }
