@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.5.0)
+  - Alamofire (4.5.1)
   - AlamofireImage (3.3.0):
     - Alamofire (~> 4.5)
   - Mockingjay (2.0.0):
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - PromiseKit (~> 4.3)
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
   PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e

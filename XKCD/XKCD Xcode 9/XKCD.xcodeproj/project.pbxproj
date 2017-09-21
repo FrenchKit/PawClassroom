@@ -8,14 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A27CA83C86779D3FEBDB7A23 /* Pods_XKCD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8BD282218E71FF1CAC38479 /* Pods_XKCD.framework */; };
-		AE45B37C1F6B4BA3002C27EC /* XKCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE45B37B1F6B4BA3002C27EC /* XKCD.swift */; };
+		AE45B37C1F6B4BA3002C27EC /* XKCDAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */; };
 		AE5C9BED1F6B35A30012213C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */; };
 		AE5C9BEF1F6B35A30012213C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C9BEE1F6B35A30012213C /* ViewController.swift */; };
 		AE5C9BF11F6B35A30012213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C9BF01F6B35A30012213C /* Assets.xcassets */; };
 		AE5C9BF41F6B35A30012213C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C9BF21F6B35A30012213C /* Main.storyboard */; };
 		AE5C9BFF1F6B35A30012213C /* XKCDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C9BFE1F6B35A30012213C /* XKCDTests.swift */; };
-		AE5C9C0A1F6B35A30012213C /* XKCDUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5C9C091F6B35A30012213C /* XKCDUITests.swift */; };
-		AE5C9C181F6B36860012213C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = AE5C9C171F6B36860012213C /* Podfile */; };
+		AE67DE5A1F73F8CC00E0B350 /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = AE67DE591F73C6C900E0B350 /* pattern.png */; };
 		C04E130051A495EA9CCE864F /* Pods_XKCDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7A4A6E9482D6E53D9CD6B7 /* Pods_XKCDTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,32 +26,22 @@
 			remoteGlobalIDString = AE5C9BE81F6B35A30012213C;
 			remoteInfo = XKCD;
 		};
-		AE5C9C061F6B35A30012213C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AE5C9BE11F6B35A30012213C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AE5C9BE81F6B35A30012213C;
-			remoteInfo = XKCD;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		47CB97CC259494C792416B74 /* Pods-XKCD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCD/Pods-XKCD.debug.xcconfig"; sourceTree = "<group>"; };
 		7B4FED6512296B70FD65D6DC /* Pods-XKCDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCDTests/Pods-XKCDTests.release.xcconfig"; sourceTree = "<group>"; };
-		AE45B37B1F6B4BA3002C27EC /* XKCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XKCD.swift; sourceTree = "<group>"; };
+		AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XKCDAPI.swift; path = ../Source/XKCDAPI.swift; sourceTree = SOURCE_ROOT; };
 		AE5C9BE91F6B35A30012213C /* XKCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AE5C9BEE1F6B35A30012213C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AE5C9BF01F6B35A30012213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Source/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		AE5C9BEE1F6B35A30012213C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../Source/ViewController.swift; sourceTree = SOURCE_ROOT; };
+		AE5C9BF01F6B35A30012213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Source/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		AE5C9BF31F6B35A30012213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE5C9BF51F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE5C9BF51F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		AE5C9BFA1F6B35A30012213C /* XKCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5C9BFE1F6B35A30012213C /* XKCDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCDTests.swift; sourceTree = "<group>"; };
-		AE5C9C001F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE5C9C051F6B35A30012213C /* XKCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5C9C091F6B35A30012213C /* XKCDUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XKCDUITests.swift; sourceTree = "<group>"; };
-		AE5C9C0B1F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE5C9C171F6B36860012213C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AE5C9BFE1F6B35A30012213C /* XKCDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = XKCDTests.swift; path = ../Tests/XKCDTests.swift; sourceTree = SOURCE_ROOT; };
+		AE5C9C001F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+		AE67DE591F73C6C900E0B350 /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pattern.png; path = ../Source/pattern.png; sourceTree = SOURCE_ROOT; };
 		B29AFE10483576162AB33A45 /* Pods-XKCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCD.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCD/Pods-XKCD.release.xcconfig"; sourceTree = "<group>"; };
 		D737AF17EFA09341D74AD9C8 /* Pods-XKCDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCDTests/Pods-XKCDTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E8BD282218E71FF1CAC38479 /* Pods_XKCD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKCD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,13 +65,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE5C9C021F6B35A30012213C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -100,7 +82,6 @@
 			children = (
 				AE5C9BEB1F6B35A30012213C /* XKCD */,
 				AE5C9BFD1F6B35A30012213C /* XKCDTests */,
-				AE5C9C081F6B35A30012213C /* XKCDUITests */,
 				AE5C9BEA1F6B35A30012213C /* Products */,
 				B1C8B7C6D8AFBBD57C25B252 /* Pods */,
 				03B1C0BEF795E9C91751A1E4 /* Frameworks */,
@@ -112,7 +93,6 @@
 			children = (
 				AE5C9BE91F6B35A30012213C /* XKCD.app */,
 				AE5C9BFA1F6B35A30012213C /* XKCDTests.xctest */,
-				AE5C9C051F6B35A30012213C /* XKCDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,13 +100,13 @@
 		AE5C9BEB1F6B35A30012213C /* XKCD */ = {
 			isa = PBXGroup;
 			children = (
-				AE5C9C171F6B36860012213C /* Podfile */,
-				AE45B37B1F6B4BA3002C27EC /* XKCD.swift */,
 				AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */,
 				AE5C9BEE1F6B35A30012213C /* ViewController.swift */,
+				AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */,
 				AE5C9BF01F6B35A30012213C /* Assets.xcassets */,
 				AE5C9BF21F6B35A30012213C /* Main.storyboard */,
 				AE5C9BF51F6B35A30012213C /* Info.plist */,
+				AE67DE591F73C6C900E0B350 /* pattern.png */,
 			);
 			path = XKCD;
 			sourceTree = "<group>";
@@ -138,15 +118,6 @@
 				AE5C9C001F6B35A30012213C /* Info.plist */,
 			);
 			path = XKCDTests;
-			sourceTree = "<group>";
-		};
-		AE5C9C081F6B35A30012213C /* XKCDUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE5C9C091F6B35A30012213C /* XKCDUITests.swift */,
-				AE5C9C0B1F6B35A30012213C /* Info.plist */,
-			);
-			path = XKCDUITests;
 			sourceTree = "<group>";
 		};
 		B1C8B7C6D8AFBBD57C25B252 /* Pods */ = {
@@ -204,24 +175,6 @@
 			productReference = AE5C9BFA1F6B35A30012213C /* XKCDTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AE5C9C041F6B35A30012213C /* XKCDUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AE5C9C141F6B35A30012213C /* Build configuration list for PBXNativeTarget "XKCDUITests" */;
-			buildPhases = (
-				AE5C9C011F6B35A30012213C /* Sources */,
-				AE5C9C021F6B35A30012213C /* Frameworks */,
-				AE5C9C031F6B35A30012213C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AE5C9C071F6B35A30012213C /* PBXTargetDependency */,
-			);
-			name = XKCDUITests;
-			productName = XKCDUITests;
-			productReference = AE5C9C051F6B35A30012213C /* XKCDUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,15 +187,12 @@
 				TargetAttributes = {
 					AE5C9BE81F6B35A30012213C = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					AE5C9BF91F6B35A30012213C = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-						TestTargetID = AE5C9BE81F6B35A30012213C;
-					};
-					AE5C9C041F6B35A30012213C = {
-						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = AE5C9BE81F6B35A30012213C;
 					};
@@ -263,7 +213,6 @@
 			targets = (
 				AE5C9BE81F6B35A30012213C /* XKCD */,
 				AE5C9BF91F6B35A30012213C /* XKCDTests */,
-				AE5C9C041F6B35A30012213C /* XKCDUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -273,7 +222,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5C9C181F6B36860012213C /* Podfile in Resources */,
 				AE5C9BF11F6B35A30012213C /* Assets.xcassets in Resources */,
 				AE5C9BF41F6B35A30012213C /* Main.storyboard in Resources */,
 			);
@@ -283,13 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE5C9C031F6B35A30012213C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AE67DE5A1F73F8CC00E0B350 /* pattern.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5C9BEF1F6B35A30012213C /* ViewController.swift in Sources */,
-				AE45B37C1F6B4BA3002C27EC /* XKCD.swift in Sources */,
+				AE45B37C1F6B4BA3002C27EC /* XKCDAPI.swift in Sources */,
 				AE5C9BED1F6B35A30012213C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,14 +349,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE5C9C011F6B35A30012213C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AE5C9C0A1F6B35A30012213C /* XKCDUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -422,11 +356,6 @@
 			isa = PBXTargetDependency;
 			target = AE5C9BE81F6B35A30012213C /* XKCD */;
 			targetProxy = AE5C9BFB1F6B35A30012213C /* PBXContainerItemProxy */;
-		};
-		AE5C9C071F6B35A30012213C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AE5C9BE81F6B35A30012213C /* XKCD */;
-			targetProxy = AE5C9C061F6B35A30012213C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -437,7 +366,8 @@
 				AE5C9BF31F6B35A30012213C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = ../Source;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -540,11 +470,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCD/Info.plist;
+				INFOPLIST_FILE = ../Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -554,11 +485,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCD/Info.plist;
+				INFOPLIST_FILE = ../Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -569,11 +501,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCDTests/Info.plist;
+				INFOPLIST_FILE = ../Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKCD.app/Contents/MacOS/XKCD";
 			};
 			name = Debug;
@@ -585,40 +518,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCDTests/Info.plist;
+				INFOPLIST_FILE = ../Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCDTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XKCD.app/Contents/MacOS/XKCD";
-			};
-			name = Release;
-		};
-		AE5C9C151F6B35A30012213C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCDUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCDUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = XKCD;
-			};
-			name = Debug;
-		};
-		AE5C9C161F6B35A30012213C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = XKCDUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.luckymarmot.demos.XKCD.XKCDUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = XKCD;
 			};
 			name = Release;
 		};
@@ -648,15 +554,6 @@
 			buildConfigurations = (
 				AE5C9C121F6B35A30012213C /* Debug */,
 				AE5C9C131F6B35A30012213C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AE5C9C141F6B35A30012213C /* Build configuration list for PBXNativeTarget "XKCDUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AE5C9C151F6B35A30012213C /* Debug */,
-				AE5C9C161F6B35A30012213C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

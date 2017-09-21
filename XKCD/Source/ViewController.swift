@@ -22,12 +22,13 @@ class ViewController: NSViewController {
 
     override var representedObject: Any? {
         didSet {
-        // Update the view, if already loaded.
+            // Update the view, if already loaded.
         }
     }
     
     func loadComic() -> Void {
-        let _ = XKCD().loadDefaultComic().then { (comic: XKCDComic) -> Void in
+        // Load latest XKCD comic
+        let _ = XKCDAPI().loadLatestComic().then { (comic: XKCDComic) -> Void in
             self.refreshUI(comic: comic)
         }
     }
