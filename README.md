@@ -31,24 +31,22 @@ Introducing how to create HTTP stubs for your application and/or unit or UI test
 
 ## B – Instagram API with the help of Paw
 
-1. Import the Instagram API in Paw File > Import > Find API Template
-2. [Create a new Instagram client app](https://www.instagram.com/developer/clients/register/)
-3. Generate Alamofire code [snippets with Paw](https://paw.cloud/extensions/SwiftAlamofireCodeGenerator)
+1. Introducing the Instagram API
+2. Import the Instagram API in Paw File > Import > Find API Template
+3. [Download ready-to-go Paw file](https://github.com/FrenchKit/PawClassroom/blob/master/FrenchKit%20Paw%20Classroom.paw)
+4. Generate Alamofire code [snippets with Paw](https://paw.cloud/extensions/SwiftAlamofireCodeGenerator)
+5. Build & run
+6. [Create a new Instagram client app](https://www.instagram.com/developer/clients/register/) – load your own Instagram feed
 
 ## C – Integrate with Tests
 
 Use the Instagram app for that, set up tests for each feature, and people can implement the stubs.
 
-1. Use Paw to generate mocks from an existing response. Install [Mockingjay Code Generator](https://paw.cloud/extensions/MockingjayGenerator)
-2. Write basic unit tests, write mocks to test the API
-3. Reuse the existing UI tests, write API mocks to test the API
-4. Add reliable validation of UI components
+1. Build a unit test case for `Instagram.loadImages(tag:, count:)`
+2. Use Paw to generate mocks from an existing response. Install [Mockingjay Code Generator](https://paw.cloud/extensions/MockingjayGenerator)
+3. Write mocks to test the API
 
-## D – Swift 4 + JSONEncoder
-
-1. Switch code and tests to use `JSONDecoder` *(Swift 4 only)*
-
-## E – JSON Schema Validation
+## D – JSON Schema Validation
 
 1. Example of what JSON Schema is and used for
 2. Add validation to your app to assert the server results
