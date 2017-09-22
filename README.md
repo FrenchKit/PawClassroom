@@ -1,6 +1,6 @@
 # From API Description to Tests & Mocks
 
-[Download Slides](FrenchKit 2017 Paw Workshop.pdf)
+[Download Slides](https://github.com/FrenchKit/PawClassroom/blob/master/FrenchKit%202017%20Paw%20Workshop.pdf)
 
 ## Introduction
 
