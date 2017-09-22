@@ -32,13 +32,13 @@
 		7B4FED6512296B70FD65D6DC /* Pods-XKCDTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCDTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCDTests/Pods-XKCDTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE364CEC1F74332300E98912 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		AE364CED1F74332300E98912 /* XKCDTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XKCDTests.swift; path = ../Tests/XKCDTests.swift; sourceTree = SOURCE_ROOT; };
-		AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XKCDAPI.swift; path = ../Source/XKCDAPI.swift; sourceTree = SOURCE_ROOT; };
+		AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XKCDAPI.swift; sourceTree = "<group>"; };
 		AE5C9BE91F6B35A30012213C /* XKCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../Source/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
-		AE5C9BEE1F6B35A30012213C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../Source/ViewController.swift; sourceTree = SOURCE_ROOT; };
-		AE5C9BF01F6B35A30012213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Source/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		AE5C9BEC1F6B35A30012213C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE5C9BEE1F6B35A30012213C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE5C9BF01F6B35A30012213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE5C9BF31F6B35A30012213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AE5C9BF51F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		AE5C9BF51F6B35A30012213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE5C9BFA1F6B35A30012213C /* XKCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XKCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29AFE10483576162AB33A45 /* Pods-XKCD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCD.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKCD/Pods-XKCD.release.xcconfig"; sourceTree = "<group>"; };
 		D737AF17EFA09341D74AD9C8 /* Pods-XKCDTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKCDTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKCDTests/Pods-XKCDTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 		AE5C9BE01F6B35A30012213C = {
 			isa = PBXGroup;
 			children = (
-				AE5C9BEB1F6B35A30012213C /* XKCD */,
+				AE5C9BEB1F6B35A30012213C /* Source */,
 				AE5C9BFD1F6B35A30012213C /* XKCDTests */,
 				AE5C9BEA1F6B35A30012213C /* Products */,
 				B1C8B7C6D8AFBBD57C25B252 /* Pods */,
@@ -95,7 +95,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE5C9BEB1F6B35A30012213C /* XKCD */ = {
+		AE5C9BEB1F6B35A30012213C /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				AE45B37B1F6B4BA3002C27EC /* XKCDAPI.swift */,
@@ -105,8 +105,9 @@
 				AE5C9BF21F6B35A30012213C /* Main.storyboard */,
 				AE5C9BF51F6B35A30012213C /* Info.plist */,
 			);
-			path = XKCD;
-			sourceTree = "<group>";
+			name = Source;
+			path = ../Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE5C9BFD1F6B35A30012213C /* XKCDTests */ = {
 			isa = PBXGroup;
@@ -114,8 +115,9 @@
 				AE364CEC1F74332300E98912 /* Info.plist */,
 				AE364CED1F74332300E98912 /* XKCDTests.swift */,
 			);
-			path = XKCDTests;
-			sourceTree = "<group>";
+			name = XKCDTests;
+			path = ../Tests;
+			sourceTree = SOURCE_ROOT;
 		};
 		B1C8B7C6D8AFBBD57C25B252 /* Pods */ = {
 			isa = PBXGroup;
@@ -361,8 +363,7 @@
 				AE5C9BF31F6B35A30012213C /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../Source;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
