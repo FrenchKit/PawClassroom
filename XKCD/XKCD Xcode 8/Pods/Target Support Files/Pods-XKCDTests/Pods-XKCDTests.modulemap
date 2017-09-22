@@ -1,0 +1,6 @@
+framework module Pods_XKCDTests {
+  umbrella header "Pods-XKCDTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_XKCD {
+  umbrella header "Pods-XKCD-umbrella.h"
+
+  export *
+  module * { export * }
+}
