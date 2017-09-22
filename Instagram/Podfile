@@ -5,6 +5,7 @@ target 'Instagram' do
     pod 'Alamofire', '~> 4.5'
     pod 'AlamofireImage', '~> 3.3'
     pod 'PromiseKit', '~> 4.3'
+    pod 'SwiftyJSON', '~> 3.1'
 
     target 'InstagramTests' do
         inherit! :search_paths

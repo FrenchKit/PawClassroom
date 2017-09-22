@@ -20,6 +20,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.4.0):
     - PromiseKit/CorePromise
+  - SwiftyJSON (3.1.4)
   - URITemplate (2.0.1)
 
 DEPENDENCIES:
@@ -27,14 +28,16 @@ DEPENDENCIES:
   - AlamofireImage (~> 3.3)
   - Mockingjay (~> 2.0)
   - PromiseKit (~> 4.3)
+  - SwiftyJSON (~> 3.1)
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   AlamofireImage: 2e784dc5d00f04903a52c1d169181469c805c3df
   Mockingjay: 7122a3fc0597aa63438e4cd9b71b7bc8aac05b87
   PromiseKit: ecf5fe92275d57ee77c9ede858af47a162e9b97e
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   URITemplate: 720b8a56a281494d7c2d31ee33183986eaed2c67
 
-PODFILE CHECKSUM: 4d200825a684dfce05fb150f462253a4e213a5fb
+PODFILE CHECKSUM: af2fb5698e6a2c70be1e9d0c83bab4c1eb0f5c07
 
 COCOAPODS: 1.2.1

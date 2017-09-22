@@ -10,6 +10,7 @@ import Foundation
 import PromiseKit
 import Alamofire
 import AlamofireImage
+import SwiftyJSON
 
 struct InstagramPicture {
     var username: String
@@ -25,19 +26,17 @@ enum InstagramError: Error {
 
 class Instagram {
     private func getAccessToken() -> String {
+        // @TODO Insert here your Instagram Access Token
         return "6082558564.fd763d7.f1cfaeff77d348a59a28a08667bea2ab"
     }
 
-    private func parseInstagramPicture(data: Any?) -> InstagramPicture? {
-        guard let d = data as? [String:Any],
-              let username = (d["user"] as? [String:Any])?["username"] as? String,
-              let userProfileUrlStr = (d["user"] as? [String:Any])?["profile_picture"] as? String,
-              let userProfileUrl = URL(string: userProfileUrlStr),
-              let imageUrlStr = ((d["images"] as? [String:Any])?["standard_resolution"] as? [String:Any])?["url"] as? String,
-              let imageUrl = URL(string: imageUrlStr) else {
+    private func parseInstagramPicture(data: JSON) -> InstagramPicture? {
+        guard let username = data["user"]["username"].string,
+              let userProfileUrl = data["user"]["profile_picture"].url,
+              let imageUrl = data["images"]["standard_resolution"]["url"].url else {
             return nil
         }
-        let location = (d["location"] as? [String:Any])?["name"] as? String ?? ""
+        let location = data["location"]["name"].string ?? ""
         return InstagramPicture(username: username, userProfileUrl: userProfileUrl, location: location, imageUrl: imageUrl)
     }
 
@@ -52,11 +51,11 @@ class Instagram {
         return Promise(resolvers: { (success, fail) in
             let urlString = "https://api.instagram.com/v1/tags/\(tag)/media/recent?count=\(count)&access_token=\(getAccessToken())"
             Alamofire.request(urlString).responseJSON  { (response: DataResponse<Any>) in
-                guard let pictureList = (response.result.value as? [String:Any])?["data"] as? [[String:Any]] else {
+                guard let pictureArray = JSON(data: response.data!)["data"].array else {
                     fail(InstagramError.invalidResponse)
                     return
                 }
-                let pictures = pictureList.flatMap({ (data: [String : Any]) -> InstagramPicture? in
+                let pictures = pictureArray.flatMap({ (data: JSON) -> InstagramPicture? in
                     return self.parseInstagramPicture(data: data)
                 })
                 success(pictures)
