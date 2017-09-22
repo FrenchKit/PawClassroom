@@ -22,15 +22,17 @@ class InstagramTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        let expectation = self.expectation(description: "fetch XKCD comic")
+        
+        let _ = Instagram().loadImages(tag: "mac").then { (pictures: [InstagramPicture]) -> Void in
+            XCTAssertNotEqual(pictures.count, 0)
+        }.catch { (error: Error) in
+            XCTFail("Failing with error")
+        }.always {
+            expectation.fulfill()
         }
+        
+        self.waitForExpectations(timeout: 5.0, handler: nil)
+
     }
-    
 }
