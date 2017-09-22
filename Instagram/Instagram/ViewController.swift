@@ -21,7 +21,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let _ = Instagram().loadImages(tag: "vegan").then { (pictures: [InstagramPicture]) -> Void in
+        let _ = Instagram().loadImages(tag: "mac").then { (pictures: [InstagramPicture]) -> Void in
             self.pictures = pictures
         }
     }

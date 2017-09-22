@@ -25,7 +25,7 @@ enum InstagramError: Error {
 
 class Instagram {
     private func getAccessToken() -> String {
-        return "3692442.97fe75d.de7b62d734254d1ba81d84a0e5fee723"
+        return "6082558564.fd763d7.f1cfaeff77d348a59a28a08667bea2ab"
     }
 
     private func parseInstagramPicture(data: Any?) -> InstagramPicture? {

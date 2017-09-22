@@ -39,7 +39,7 @@ Introducing how to create HTTP stubs for your application and/or unit or UI test
 
 Use the Instagram app for that, set up tests for each feature, and people can implement the stubs.
 
-1. Use Paw to generate mocks from an existing response
+1. Use Paw to generate mocks from an existing response. Install [Mockingjay Code Generator](https://paw.cloud/extensions/MockingjayGenerator)
 2. Write basic unit tests, write mocks to test the API
 3. Reuse the existing UI tests, write API mocks to test the API
 4. Add reliable validation of UI components
