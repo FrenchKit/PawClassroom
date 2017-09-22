@@ -665,7 +665,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Instagram" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -687,16 +687,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="512" height="665"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="620" horizontalPageScroll="10" verticalLineScroll="620" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE9-GV-dTG">
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="618" horizontalPageScroll="10" verticalLineScroll="618" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TE9-GV-dTG">
                                 <rect key="frame" x="0.0" y="0.0" width="512" height="665"/>
                                 <clipView key="contentView" id="8EZ-Dq-zWa">
                                     <rect key="frame" x="0.0" y="0.0" width="512" height="665"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="618" rowSizeStyle="automatic" viewBased="YES" id="Zuw-SJ-W4S">
-                                            <rect key="frame" x="0.0" y="0.0" width="515" height="665"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="618" viewBased="YES" id="Zuw-SJ-W4S">
+                                            <rect key="frame" x="0.0" y="0.0" width="512" height="665"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
@@ -713,11 +712,11 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="FG6-1q-dmG" customClass="MediaTableCellView" customModule="Instagram" customModuleProvider="target">
-                                                            <rect key="frame" x="1" y="1" width="512" height="618"/>
+                                                        <tableCellView identifier="MediaTableCellView" id="FG6-1q-dmG" customClass="MediaTableCellView" customModule="Instagram" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="512" height="618"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZb-y5-mOf">
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EZb-y5-mOf" customClass="LazyImageView" customModule="Instagram" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="54" width="512" height="512"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="512" id="BNi-fH-kTA"/>
@@ -725,7 +724,7 @@
                                                                     </constraints>
                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="Tiw-xt-uON"/>
                                                                 </imageView>
-                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-AG-9FP">
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFS-AG-9FP" customClass="LazyImageView" customModule="Instagram" customModuleProvider="target">
                                                                     <rect key="frame" x="8" y="574" width="36" height="36"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="36" id="7gz-Ci-PLz"/>
@@ -761,14 +760,24 @@
                                                                 <constraint firstItem="EZb-y5-mOf" firstAttribute="top" secondItem="fFS-AG-9FP" secondAttribute="bottom" constant="8" id="bGl-TN-sku"/>
                                                                 <constraint firstItem="fFS-AG-9FP" firstAttribute="leading" secondItem="FG6-1q-dmG" secondAttribute="leading" constant="8" id="ief-Nz-XTm"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="locationLabel" destination="9Ep-iB-xJX" id="kef-gq-LN8"/>
+                                                                <outlet property="pictureImageView" destination="EZb-y5-mOf" id="k2G-qv-B2T"/>
+                                                                <outlet property="userProfileImageView" destination="fFS-AG-9FP" id="8kx-lw-KPL"/>
+                                                                <outlet property="usernameLabel" destination="YW0-X6-8qd" id="O5g-R2-ozZ"/>
+                                                            </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
                                                 </tableColumn>
                                             </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="jZd-F0-1G9"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="EKl-Zl-7Ma"/>
+                                            </connections>
                                         </tableView>
                                     </subviews>
                                 </clipView>
-                                <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="VBl-F9-ndX">
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="VBl-F9-ndX">
                                     <rect key="frame" x="0.0" y="649" width="512" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -785,6 +794,9 @@
                             <constraint firstAttribute="trailing" secondItem="TE9-GV-dTG" secondAttribute="trailing" id="Kgw-KS-9Ex"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Zuw-SJ-W4S" id="CD8-fM-ItL"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
